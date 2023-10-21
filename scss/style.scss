@@ -67,12 +67,6 @@
     background-size: cover;
     min-height: 193px;
 }
-// @media (min-width: 640px) {
-//     .head {
-//         min-height: 386px;
-//         background-position: -162px center;
-//     }
-// }
 
 .top-slider {
     background: rgba(33, 33, 33, 0.50);
@@ -204,6 +198,9 @@
 }
 @media (min-width: 1024px) {
     .top-slider {
+        &__btn:hover {
+            background-color: $accent-bg;
+        }
         &__item {
             min-height: 618px;
         }
@@ -296,6 +293,9 @@
     .call {
         &__box {
             max-width: 695px;
+        }
+        &__btn:hover {
+            background-color: $default-color;
         }
     }
 }
@@ -505,7 +505,7 @@
                 .services__item-inner {
                     min-height: 255px;
                     margin: 10px 0;
-                    padding: 21px 9px 5px 9px; // * padding: 21px 9px 15px 9px
+                    padding: 21px 9px 5px 9px;
                 }
             }
         }
@@ -683,6 +683,9 @@
         padding: 21px 26px;
         text-transform: uppercase;
     }
+    &__btn:hover {
+        background-color: $accent-bg;
+    }
 }
 @media (min-width: 640px) {
     .team {
@@ -787,7 +790,6 @@
     }
     &__item {
         margin-bottom: 30px;
-        // padding: 0 6px;
     }
     &__item-img {
         width: 100%;
@@ -966,6 +968,12 @@
         &__info-help,
         &__info-menu {
             width: 194px;
+        }
+        &__info-contatc-link:hover,
+        &__info-address-text:hover,
+        &__info-help-link:hover,
+        &__info-menu-link:hover {
+            color: $default-color;
         }
     }
 }

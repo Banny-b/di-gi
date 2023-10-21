@@ -382,6 +382,9 @@ body {
   }
 }
 @media (min-width: 1024px) {
+  .top-slider__btn:hover {
+    background-color: #15203a;
+  }
   .top-slider__item {
     min-height: 618px;
   }
@@ -466,6 +469,9 @@ body {
 @media (min-width: 1024px) {
   .call__box {
     max-width: 695px;
+  }
+  .call__btn:hover {
+    background-color: #9B9B9B;
   }
 }
 @media (min-width: 1440px) {
@@ -827,6 +833,9 @@ body {
   padding: 21px 26px;
   text-transform: uppercase;
 }
+.team__btn:hover {
+  background-color: #15203a;
+}
 
 @media (min-width: 640px) {
   .team {
@@ -1089,6 +1098,9 @@ body {
   }
   .footer__info-contatc, .footer__info-address, .footer__info-help, .footer__info-menu {
     width: 194px;
+  }
+  .footer__info-contatc-link:hover, .footer__info-address-text:hover, .footer__info-help-link:hover, .footer__info-menu-link:hover {
+    color: #9B9B9B;
   }
 }
 @media (min-width: 1366px) {

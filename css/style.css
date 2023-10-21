@@ -208,6 +208,7 @@ body {
 .header .submenu {
   display: none;
   position: absolute;
+  right: -10px;
   list-style: none;
   padding: 0;
   background-color: #ffffff;
@@ -231,6 +232,29 @@ body {
 @media (min-width: 640px) {
   .header__inner {
     min-height: 100px;
+  }
+  .header .submenu {
+    right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .header .submenu {
+    right: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .header .submenu {
+    right: 12px;
+  }
+}
+@media (min-width: 1366px) {
+  .header .submenu {
+    right: 85px;
+  }
+}
+@media (min-width: 1440px) {
+  .header .submenu {
+    right: 155px;
   }
 }
 .logo__link {

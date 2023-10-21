@@ -11,6 +11,28 @@
         justify-content: space-between;
         align-items: center;
     }
+    .submenu {
+        display: none;
+        position: absolute;
+        list-style: none;
+        padding: 0;
+        background-color: #ffffff;
+        border-radius: 4px;
+    }
+    .submenu li {
+        padding: 10px 15px;
+    }
+    .menu:hover .submenu {
+        display: block;
+        z-index: 1;
+    }
+    .submenu a {
+        text-decoration: none;
+        color: $default-color;
+    }
+    .submenu a:hover {
+        color: $text-color;
+    }
 }
 @media (min-width: 640px) {
     .header {
@@ -1019,7 +1041,7 @@
         letter-spacing: 2px;
         color: $text-color;
         @extend %robotocondensed-400;
-        scroll-behavior: smooth; // ?
+        // scroll-behavior: smooth;
     }
     &__btn-img {
         margin-right: auto;
@@ -1036,6 +1058,11 @@
         &__btn-img {
             margin: 0;
         }
+    }
+}
+@media (min-width: 1024px) {
+    .top__btn:hover {
+        color: #000000;
     }
 }
 @media (min-width: 1440px) {

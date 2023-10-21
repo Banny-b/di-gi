@@ -912,11 +912,6 @@
         text-decoration: none;
     }
 }
-@media (min-width: 360px) {
-    .footer .footer__logo {
-        right: 62px;
-    }
-}
 @media (min-width: 640px) {
     .footer {
         text-align: left;
@@ -1030,7 +1025,7 @@
 }
 @media (min-width: 1366px) {
     .footer__logo {
-        right: 554px;
+        right: 554px; 
     }
 }
 @media (min-width: 1440px) {

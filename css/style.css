@@ -1050,11 +1050,6 @@ body {
   text-decoration: none;
 }
 
-@media (min-width: 360px) {
-  .footer .footer__logo {
-    right: 62px;
-  }
-}
 @media (min-width: 640px) {
   .footer {
     text-align: left;

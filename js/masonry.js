@@ -22,7 +22,7 @@ function rearrangeItems() {
 
 function rearrangeColumns(columns) {
     const itemsArray = Array.from(newsItemElements);
-    newsItems.innerHTML = ""; // Очистим контейнер
+    newsItems.innerHTML = ""; // Очистка контейнера
     let columnArray = Array.from({ length: columns }, () => []);
 
     itemsArray.forEach((item, index) => {
@@ -42,4 +42,4 @@ function rearrangeColumns(columns) {
 };
 
 window.addEventListener("resize", rearrangeItems);
-rearrangeItems(); // Вызываем функцию при загрузке страницы
+rearrangeItems(); // Вызов функции при загрузке страницы

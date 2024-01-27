@@ -865,7 +865,9 @@
     &__logo {
         position: absolute;
         top: -30px;
-        right: 45px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
         background-color: $accent;
         width: 230px;
     }
@@ -916,10 +918,6 @@
     .footer {
         text-align: left;
         padding: 85px 40px 95px 40px;
-        &__logo {
-            right: 205px;
-            text-align: center;
-        }
         &__title {
             padding: 0 12px;
         }
@@ -973,9 +971,6 @@
 @media (min-width: 768px) {
     .footer {
         padding: 114px 40px 86px 40px;
-        &__logo {
-            right: 265px;
-        }
         &__title {
             font-size: 36px;
             line-height: 32px;
@@ -991,9 +986,6 @@
 @media (min-width: 1024px) {
     .footer {
         padding: 158px 40px 127px 40px;
-        &__logo {
-            right: 392px;
-        }
         &__title {
             width: 820px;
             margin-bottom: 80px;
@@ -1023,17 +1015,10 @@
         }
     }
 }
-@media (min-width: 1366px) {
-    .footer__logo {
-        right: 554px; 
-    }
-}
+
 @media (min-width: 1440px) {
     .footer {
         padding: 158px 150px 115px 150px;
-        &__logo {
-            right: 605px;
-        }
         &__social {
             margin-bottom: 80px;
         }
